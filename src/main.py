@@ -31,7 +31,7 @@ mcp = FastMCP(
 )
 
 # Register AgentContext middleware for SSE transport
-from tools_shared.mcp_auth import AgentContextMiddleware  # noqa: E402
+from platform_sdk.mcp_auth import AgentContextMiddleware  # noqa: E402
 
 if TRANSPORT == "sse":
     _orig_sse_app = mcp.sse_app
