@@ -1,6 +1,6 @@
 [project]
 name = "ai-mcp-salesforce"
-version = "0.6.0"
+version = "0.6.1"
 description = "Enterprise AI Platform — Salesforce MCP (CRM data access)"
 requires-python = ">=3.11"
 dependencies = [
