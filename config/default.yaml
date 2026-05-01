@@ -15,6 +15,14 @@ redis_host: redis
 redis_port: 6379
 redis_password: ${REDIS_PASSWORD}
 
+# PostgreSQL database — salesforce-mcp queries a salesforce.* schema
+# replica in the shared pgvector container, not the live Salesforce API.
+db_host: pgvector
+db_port: 5432
+db_name: ai_memory
+db_user: admin
+db_pass: ${DB_PASS}
+
 registry_url: http://ai-registry:8090
 service_url: http://salesforce-mcp:8081
 service_version: "0.6.0"
